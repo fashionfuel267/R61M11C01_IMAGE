@@ -30,7 +30,7 @@ namespace R61M11C01_IMAGE.Controllers
             };
             try
             {
-                if (requestedFile == null)
+                if (requestedFile != null)
                 {
                     string ext = Path.GetExtension(requestedFile.FileName).ToLower();
                     if (ext == ".jpg" || ext == ".png" || ext == ".jpeg")
